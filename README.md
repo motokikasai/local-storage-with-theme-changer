@@ -6,22 +6,22 @@ Let's create a simple page with some content (you can reuse the same text that i
 
 Toggle with light theme selected:
 
-![toggle with light theme selected](toggle-light-selected.png)
+![toggle with light theme selected](images/toggle-light-selected.png)
 
-![light theme example](light-medium-example.png)
+![light theme example](images/light-medium-example.png)
 
 Toggle with dark theme selected:
 
-![toggle with dark theme selected](toggle-dark-selected.png)
+![toggle with dark theme selected](images/toggle-dark-selected.png)
 
-![dark theme example](dark-medium-example.png)
+![dark theme example](images/dark-medium-example.png)
 
 Every time the user selects a new theme, we need to save it in the local storage.
 So next time the user refreshes the page, the theme stored in the local storage will be applied and the toggle will have the right theme selected.
 
 2. Next, let's add some font size controls. The user can switch between small, medium and large font size. Since the user can select one option at a time, we could use radio buttons.
 
-![font size controls example](font-size-controls.png)
+![font size controls example](images/font-size-controls.png)
 
 By default, the medium size is applied. Whenever the user changes the size, the newly selected size should be saved into local storage so their preference is preserved and applied the next time they visit the site.
 
