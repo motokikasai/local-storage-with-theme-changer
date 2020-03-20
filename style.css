@@ -55,23 +55,24 @@ body {
   -webkit-appearance: none;
   /* background: #000;* */
   border-radius: 50px;
-  box-shadow: inset 2px 2px 5px rgb(196, 196, 196);
+  box-shadow: inset 2px 2px 5px rgba(196, 196, 196, 0.5);
   /* border: 2px solid rgb(26, 26, 26); */
 }
 
-.checkbox::after {
+.cover {
   z-index: 99;
-  content: "";
   position: absolute;
-  top: 3px;
-  left: 10px;
+  top: 27px;
+  right: 80px;
   width: 34px;
   height: 34px;
-  background: #dddddd;
+  background: #eeeeee;
   border-radius: 50%;
   box-shadow: inset 2px 2px 5px rgba(128, 128, 128, 0.6),
     inset -2px -2px 5px rgba(204, 204, 204, 0.6);
   /* border: 2px solid rgb(194, 194, 194); */
+  transition-timing-function: cubic-bezier(0, 0.99, 0.41, 0.99);
+  transition: 0.3s;
 }
 
 /* Weather icon effect */
