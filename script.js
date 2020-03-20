@@ -1,4 +1,5 @@
 const checkbox = document.querySelector("#checkbox");
+const iconCover = document.querySelector("#checkbox::after");
 const header = document.querySelector(".header");
 const container = document.querySelector(".container");
 
@@ -16,6 +17,7 @@ const switcher = () => {
   if (checkbox.checked) {
     container.classList.add("container-dark");
     header.classList.add("header-dark");
+    // Weather icon cover
   } else {
     container.classList.remove("container-dark");
     header.classList.remove("header-dark");
