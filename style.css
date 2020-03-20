@@ -79,7 +79,6 @@ body {
 .input-bar {
   position: absolute;
   right: 0;
-  /* opacity: 0.5; */
 }
 
 .weather-icon {
@@ -88,7 +87,6 @@ body {
   top: 31px;
   right: 0;
   width: 26px;
-  /* margin-top: 31px; */
 }
 
 .sun {
@@ -101,4 +99,34 @@ body {
 
 input[type="checkbox" i]:focus {
   outline: none;
+}
+
+/* Font Sizer */
+.sizer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  top: 30px;
+  right: 140px;
+  /* background: #000; */
+}
+
+input[type="radio" i] {
+  margin: 0;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  border: 0;
+}
+
+label {
+  padding-right: 8px;
+}
+
+.font-medium {
+  font-size: 1.6rem;
+}
+
+.font-large {
+  font-size: 1.8rem;
 }
