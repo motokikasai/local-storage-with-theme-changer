@@ -2,6 +2,7 @@ const checkbox = document.querySelector("#checkbox");
 const iconCover = document.querySelector(".cover");
 const header = document.querySelector(".header");
 const container = document.querySelector(".container");
+const content = document.querySelector(".content");
 
 // GET Local Storage onload...
 if (localStorage.getItem("checkbox") == "true") {
@@ -30,16 +31,19 @@ const themeSwitcher = () => {
   localStorage.setItem("checkbox", checkbox.checked);
 };
 
-const sizeController = () => {
-  if (document.querySelector("#font-small").checked) {
-    container.style.fontSize = "1rem";
-  }
-};
+// Add Event Listeners to Radio buttons...
+const radioBtns = document.querySelectorAll('[type="radio"]');
 
-// console.log(document.querySelector("#font-medium").checked);
+for (let i = 0; i < radioBtns.length; i++) {
+  const radioBtn = radioBtns[i];
+  console.log(radioBtn.checked);
+
+  radioBtn.addEventListener("change", () => {
+    if (radioBtn.checked) {
+      content.style.fontSize = radioBtn.dataset.radio;
+    }
+  });
+}
 
 // Add Change Event for switching themes...
 checkbox.addEventListener("change", themeSwitcher);
-
-// Add Change Event for switching font sizes...
-checkbox.addEventListener("change", sizeController);
