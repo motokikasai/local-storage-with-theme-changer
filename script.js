@@ -11,10 +11,7 @@ if (localStorage.getItem("checkbox") == "true") {
   container.classList.add("container-dark");
   header.classList.add("header-dark");
   iconCover.style.right = "34px";
-} else {
-  container.classList.remove("container-dark");
-  header.classList.remove("header-dark");
-  iconCover.style.right = "80px";
+  iconCover.classList.add("cover-dark");
 }
 
 // GET Local Storage for Font Size...
@@ -36,10 +33,12 @@ const themeSwitcher = () => {
     container.classList.add("container-dark");
     header.classList.add("header-dark");
     iconCover.style.right = "34px";
+    iconCover.classList.add("cover-dark");
   } else {
     container.classList.remove("container-dark");
     header.classList.remove("header-dark");
     iconCover.style.right = "80px";
+    iconCover.classList.remove("cover-dark");
   }
 
   //   SET Local Storage to save the theme selected by user

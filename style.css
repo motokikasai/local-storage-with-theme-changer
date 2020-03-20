@@ -77,6 +77,12 @@ body {
   transition: 0.2s;
 }
 
+.cover-dark {
+  background: black;
+  box-shadow: inset 2px 2px 5px rgba(46, 46, 46, 0.9),
+    inset -1px -1px 3px rgba(255, 255, 255, 0.9);
+}
+
 /* Weather icon effect */
 .input-bar {
   position: absolute;
