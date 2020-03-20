@@ -15,7 +15,7 @@ if (localStorage.getItem("checkbox") == "true") {
   iconCover.style.right = "80px";
 }
 
-const switcher = () => {
+const themeSwitcher = () => {
   if (checkbox.checked) {
     container.classList.add("container-dark");
     header.classList.add("header-dark");
@@ -30,5 +30,16 @@ const switcher = () => {
   localStorage.setItem("checkbox", checkbox.checked);
 };
 
+const sizeController = () => {
+  if (document.querySelector("#font-small").checked) {
+    container.style.fontSize = "1rem";
+  }
+};
+
+// console.log(document.querySelector("#font-medium").checked);
+
 // Add Change Event for switching themes...
-checkbox.addEventListener("change", switcher);
+checkbox.addEventListener("change", themeSwitcher);
+
+// Add Change Event for switching font sizes...
+checkbox.addEventListener("change", sizeController);

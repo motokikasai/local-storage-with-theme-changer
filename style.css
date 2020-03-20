@@ -71,8 +71,8 @@ body {
   box-shadow: inset 2px 2px 5px rgba(128, 128, 128, 0.6),
     inset -2px -2px 5px rgba(204, 204, 204, 0.6);
   /* border: 2px solid rgb(194, 194, 194); */
-  transition-timing-function: cubic-bezier(0, 0.99, 0.41, 0.99);
-  transition: 0.3s;
+  transition-timing-function: cubic-bezier(0, 1, 0, 1.01);
+  transition: 0.2s;
 }
 
 /* Weather icon effect */
