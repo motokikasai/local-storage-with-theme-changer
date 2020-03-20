@@ -3,6 +3,7 @@ const iconCover = document.querySelector(".cover");
 const header = document.querySelector(".header");
 const container = document.querySelector(".container");
 const content = document.querySelector(".content");
+const radioBtns = document.querySelectorAll('[type="radio"]');
 
 // GET Local Storage onload...
 if (localStorage.getItem("checkbox") == "true") {
@@ -17,9 +18,19 @@ if (localStorage.getItem("checkbox") == "true") {
 }
 
 // GET Local Storage for Font Size...
-content.style.fontSize = localStorage.getItem("radioButton");
+content.style.fontSize = localStorage.getItem("fontSize");
 
-// EVent Listener function
+for (let i = 0; i < radioBtns.length; i++) {
+  const radioBtn = radioBtns[i];
+
+  console.log(localStorage.getItem("radioChecked"));
+
+  if (radioBtn.getAttribute("id") === localStorage.getItem("radioChecked")) {
+    radioBtn.checked = true;
+  }
+}
+
+// Theme Switcher callback function
 const themeSwitcher = () => {
   if (checkbox.checked) {
     container.classList.add("container-dark");
@@ -35,22 +46,20 @@ const themeSwitcher = () => {
   localStorage.setItem("checkbox", checkbox.checked);
 };
 
-// Add Event Listeners to Radio buttons...
-const radioBtns = document.querySelectorAll('[type="radio"]');
+// Add Change Event to theme switcher
+checkbox.addEventListener("change", themeSwitcher);
 
+// Add Event Listeners to Radio buttons
 for (let i = 0; i < radioBtns.length; i++) {
   const radioBtn = radioBtns[i];
-  console.log(radioBtn.checked);
 
   radioBtn.addEventListener("change", () => {
     if (radioBtn.checked) {
       content.style.fontSize = radioBtn.dataset.radio;
 
       // SET Local Storage to save the font size selected by user
-      localStorage.setItem("radioButton", radioBtn.dataset.radio);
+      localStorage.setItem("fontSize", radioBtn.dataset.radio);
+      localStorage.setItem("radioChecked", radioBtn.getAttribute("id"));
     }
   });
 }
-
-// Add Change Event for switching themes...
-checkbox.addEventListener("change", themeSwitcher);
