@@ -16,6 +16,10 @@ if (localStorage.getItem("checkbox") == "true") {
   iconCover.style.right = "80px";
 }
 
+// GET Local Storage for Font Size...
+content.style.fontSize = localStorage.getItem("radioButton");
+
+// EVent Listener function
 const themeSwitcher = () => {
   if (checkbox.checked) {
     container.classList.add("container-dark");
@@ -41,6 +45,9 @@ for (let i = 0; i < radioBtns.length; i++) {
   radioBtn.addEventListener("change", () => {
     if (radioBtn.checked) {
       content.style.fontSize = radioBtn.dataset.radio;
+
+      // SET Local Storage to save the font size selected by user
+      localStorage.setItem("radioButton", radioBtn.dataset.radio);
     }
   });
 }
