@@ -45,7 +45,7 @@ const themeSwitcher = () => {
   localStorage.setItem("checkbox", checkbox.checked);
 };
 
-// Add Change Event to theme switcher
+// Add Change Event to theme switcher button/input
 checkbox.addEventListener("change", themeSwitcher);
 
 // Add Event Listeners to Radio buttons
