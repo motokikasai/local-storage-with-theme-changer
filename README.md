@@ -1,17 +1,12 @@
-# Local storage
-
-Toggle with light theme selected:
-
-![toggle with light theme selected](images/toggle-light-selected.png)
-
-![light theme example](images/light-medium-example.png)
-
-Toggle with dark theme selected:
-
-![toggle with dark theme selected](images/toggle-dark-selected.png)
-
-![dark theme example](images/dark-medium-example.png)
 
 
+<p align="center">
+  <img src="./src/assets/logo-tpl-html.png" height="70px" width="70px"><img src="./src/assets/logo-tpl-css.png" height="70px" width="70px"><img src="./src/assets/logo-tpl-js.png" height="70px" width="70px">
+</p>
+<h1 align="center">Theme Changer w/ local storage</h1>
 
+<p align="center">
+  <img src="./images/20200621-local-storage.gif" width="600px">
+</p>
 
+<a href="https://local-storage-with-theme-changer.now.sh/" target="_blank"><h3 align="center">DEMO</h3></a>
