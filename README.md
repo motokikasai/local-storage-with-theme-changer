@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="./src/assets/logo-tpl-html.png" height="70px" width="70px"><img src="./src/assets/logo-tpl-css.png" height="70px" width="70px"><img src="./src/assets/logo-tpl-js.png" height="70px" width="70px">
+  <img src="./images/logo-tpl-html.png" height="70px" width="70px"><img src="./images/logo-tpl-css.png" height="70px" width="70px"><img src="./images/logo-tpl-js.png" height="70px" width="70px">
 </p>
 <h1 align="center">Theme Changer w/ local storage</h1>
 
