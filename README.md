@@ -9,4 +9,4 @@
   <img src="./images/20200621-local-storage.gif" width="600px">
 </p>
 
-<a href="https://local-storage-with-theme-changer.now.sh/" target="_blank"><h3 align="center">DEMO</h3></a>
+<a href="https://local-storage-with-theme-changer.now.sh/" target="_blank"><h3 align="center">LIVE</h3></a>
